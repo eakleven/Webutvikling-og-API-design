@@ -1,3 +1,4 @@
+
 #test {
     color: blue;
 }
@@ -6,14 +7,19 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-.answear {
+.answer {
     background-color: #fff;
     margin: 1rem;
     padding: 1rem;
     border: 1px solid black;
     border-radius: 5px;
     width: 80%;
+    cursor: pointer;
+
+}
+.answer:hover {
+    background-color: aqua;
 }
