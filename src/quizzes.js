@@ -8,7 +8,7 @@ let quizzes = [
             "Trygve",
             "Erik"
         ],
-        indexOfCorrect: 1
+        indexOfCorrect: 0
     },
     {
         question: "Hvilken årstid er det?",
@@ -18,7 +18,7 @@ let quizzes = [
             "Vinter",
             "Vår"
         ],
-        indexOfCorrect: 3
+        indexOfCorrect: 2
     },
     {
         question: "Hvilken farge får du hvis du blander rød og blå?",
@@ -28,7 +28,7 @@ let quizzes = [
             "Svart",
             "Lilla"
         ],
-        indexOfCorrect: 1
+        indexOfCorrect: 0
     }
 ]
 

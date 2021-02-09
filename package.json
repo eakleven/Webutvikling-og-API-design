@@ -5,22 +5,32 @@
   "repository": "https://github.com/eakleven/Webutvikling-og-API-design.git",
   "author": "eakleven <erikandreas.kleven@gmail.com>",
   "license": "MIT",
-
   "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ],
     "presets": [
-      "@babel/env"
+      "@babel/env",
+      "@babel/react"
     ]
+  },
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   },
   "devDependencies": {
     "@babel/cli": "7.12.10",
     "@babel/core": "7.12.10",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
     "@babel/preset-env": "7.12.11",
-    "@webpack-cli/serve": "^1.2.2",
+    "@babel/preset-react": "7.12.10",
     "babel-jest": "24.9.0",
+    "babel-loader": "8.2.2",
     "jest": "24.9.0",
-    "webpack": "4.41.2",
-    "webpack-cli": "3.3.10",
-    "webpack-dev-server": "3.9.0"
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "5.11.1",
+    "webpack-cli": "4.3.1",
+    "webpack-dev-server": "3.11.1"
   },
   "engines": {
     "node": "^14.0.0"
@@ -31,15 +41,9 @@
     ],
     "testRegex": "tests/.*-test\\.(js|jsx)$"
   },
-  "keywords": [],
-  "name": "unit-tests",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open --mode development",
+    "dev": "webpack serve --open --mode development",
     "test": "jest --coverage"
   }
 }
-
-
-
-
