@@ -24,16 +24,21 @@ class App extends React.Component{
         return <div class='answer' onClick={() => this.handleClick(correct)}>{answer}</div>
     }
 
+
     render() {
         const quiz = this.state.quiz;
 
         return(
             <>
-                <p class='Question'>{quiz.question}</p>
-                {this.renderAnswerTag(quiz.answers[0], quiz.indexOfCorrect === 0)};
-                {this.renderAnswerTag(quiz.answers[1], quiz.indexOfCorrect === 1)};
-                {this.renderAnswerTag(quiz.answers[2], quiz.indexOfCorrect === 2)};
-                {this.renderAnswerTag(quiz.answers[3], quiz.indexOfCorrect === 3)};
+                <div class='container'>
+                    <p class='Question'>{quiz.question}</p>
+                    {this.renderAnswerTag(quiz.answers[0], quiz.indexOfCorrect === 0)}
+
+                    {this.renderAnswerTag(quiz.answers[1], quiz.indexOfCorrect === 1)}
+                    {this.renderAnswerTag(quiz.answers[2], quiz.indexOfCorrect === 2)}
+                    {this.renderAnswerTag(quiz.answers[3], quiz.indexOfCorrect === 3)}
+                </div>
+
 
             </>
         )

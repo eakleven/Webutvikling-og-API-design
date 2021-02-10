@@ -1,7 +1,4 @@
 
-#test {
-    color: blue;
-}
 
 .container {
     display: flex;
@@ -11,12 +8,12 @@
 }
 
 .answer {
-    background-color: #fff;
+    background-color: #7f7f7f;
     margin: 1rem;
     padding: 1rem;
     border: 1px solid black;
     border-radius: 5px;
-    width: 80%;
+    width: 50%;
     cursor: pointer;
 
 }
