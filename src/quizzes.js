@@ -5,7 +5,7 @@ let quizzes = [
         answers: [
             "Erna",
             "Jens",
-            "Trygve",
+            "Trulte",
             "Erik"
         ],
         indexOfCorrect: 0
