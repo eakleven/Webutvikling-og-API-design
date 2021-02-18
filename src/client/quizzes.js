@@ -21,6 +21,26 @@ let quizzes = [
         indexOfCorrect: 2
     },
     {
+        question: "Hvilket tall er pi?",
+        answers: [
+            "4.12",
+            "1.54353",
+            "3.14",
+            "Ingen vet"
+        ],
+        indexOfCorrect: 2
+    },
+    {
+        question: "Hvor mange land er det i verden?",
+        answers: [
+            "208",
+            "193",
+            "365",
+            "93"
+        ],
+        indexOfCorrect: 1
+    },
+    {
         question: "Hvilken farge får du hvis du blander rød og blå?",
         answers: [
             "Grønn",
@@ -43,7 +63,6 @@ export function getRandomQuizzes (numberOfQuizzes) {
     }
 
     const selection = Array(numberOfQuizzes);
-    console.log("Selection er: " + selection)
 
     let i = 0;
 
